@@ -1,0 +1,161 @@
+:root{--siteWeight:900px;
+    --characterSize:35px;
+    --character-color:white;
+    --contentColor:black;
+  }
+    
+*{ box-sizing: border-box;
+text-decoration: none;
+list-style-type: none;
+scroll-behavior: smooth;/*content:""*/
+} 
+
+html,body{margin:0  ;padding:0 ;}
+
+header.header ,nav.nav-bar{
+width:100%;
+background-color:var(--character-color) ;
+top: 0;
+right: 0;
+z-index: 1000;
+position: fixed;
+box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+display: flex;
+align-items: center;
+ justify-content: space-around;
+ padding:10px;
+ transition: .3s;
+}
+nav.nav-bar div a h1{transition: 1s;}
+nav.nav-bar div a h1:hover{transform: scale(2.33);}
+
+#mobile-menu{font-size: 38px;
+color: var(--character-color);
+z-index: 10001;
+display: none;}
+
+#bags,ul,li{list-style:none;display:inline;
+padding-right:1cm;}
+
+a{text-decoration:none;color:black;
+font-weight:bold;font-family:monospace;
+font-size:0.60cm;transition: all .40s;}
+.nav-bar div ul li a:hover{background:black;
+color:white;padding:4px;transform: none;
+transition: none;} 
+
+div.container-box{display:grid;
+             grid-template-columns:auto auto;
+           grid-gap:px;
+        background-color: transparent;
+     }
+div.container-box >div.image-blocks{padding:10px ;
+                      text-align:center}      
+/*.nav-icons>i{justify-content:space-around;padding-right:15px;}*/
+.nav-icons{display:inline}
+
+
+.about-content{color:#000;text-align:justified;line-height:30px;font-weight:bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+
+.footer-container{display:grid;grid-template-columns:auto auto auto; justify-content:space-around;
+padding: 10px;color:#fff/*flex-wrap:nowrap;flex-direction: row;*/}
+
+p{color:rgb(255,255,255);}
+
+.footer-container div a p:hover,.social-medias a p:hover{transform:translateX(-10px)}
+
+input[type="email"] {width:30%;
+border:none;outline:none;
+background-color: dimgray;
+height:fit-content;line-height:40px;}
+
+input[type="submit"]{bakground:white;
+  color:#000;line-height:40px;
+width:auto;height:auto;border:none;outline:none;}
+
+.image-blocks{/*box-shadow:1px 1px 4px 1px black !important ;*/
+  /*background: transparent;transition: all .40s ease;
+  */
+  padding: 0px 20px 10px 20px;
+   background: transparent;
+   box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+   border-radius: 10px;
+   position: relative;
+   transition: all .40s ease;}
+
+  .image-blocks img{width:100%;
+  height:auto;}
+
+.image-blocks:hover{transform:translateY(-5px);
+background-color:transparent!important;}
+
+/****table{text-align: center;justify-content:space-around;}*/
+
+div.i-cart{max-width:75px;
+
+height:75px;
+background-color:black;
+transition: 1.6s;}
+.i-cart:hover{transform:scalex(-1.5);}
+
+main{}
+
+article{background-color: #fff;
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+align-content: space-around;
+align-items: center;flex-direction:column;
+padding:50px 0px 50px 0px;
+}
+
+article div{text-align: center;}
+article div h1{margin-bottom: 30px;font-size: 2.2rem;}
+
+article div p{
+          max-width: 600px;
+          font-size: 1.1rem;
+             font-weight: 600;
+            color: var(--contentColor,black);
+          line-height: 60px;}   
+        .rule{outline:solid 5px white;}  
+           
+
+
+@media only screen and (max-width:800px) {
+
+#mobile-menu{display:flex;
+width:55px;
+height:40px;
+justify-content:center;
+background-color: black;}
+.nav-bar{padding:15px 20px;}
+
+nav.nav-bar div.list-con ul{top: -500px;
+left: 0;
+right: 0;
+position: absolute;
+flex-direction: column;
+background: var(--bg-color);
+box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+transition: all .40s ease;}
+nav.nav-bar .list-con a{
+display: block;
+padding: 1rem;
+margin: 0.5rem;}
+
+
+.container-box,.image-blocks,.footer-container{display:block;}
+
+.nav-icons{display:inline;row;justify-content: space-between;padding:15px auto;} 
+div.container-box{display:grid;
+             grid-template-columns:auto;
+           grid-gap:px;
+        background-color: transparent;
+     }
+div.container-box >div.image-blocks{padding:10px ;
+                      text-align:center}  
+                      .rule{outline:solid 5px red;width:50%;align:left;}
+
+
+}
